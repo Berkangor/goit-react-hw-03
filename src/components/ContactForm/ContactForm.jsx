@@ -10,8 +10,8 @@ const formSchema = Yup.object().shape({
     .max(50, "Maximum 50 lettters")
     .required("Name is required"),
   usernumber: Yup.string()
-    .phone("UA", "Невірний номер телефону")
-    .required("Number is required"),
+  .phone("TR", "Geçersiz telefon numarası") 
+  .required("Telefon numarası gerekli"),
 });
 
 const fieldId = nanoid();
